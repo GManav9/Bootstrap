@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;    
+}
+#first{
+    height: 950px;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(img/hero_1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.collapse{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#a1{
+    margin-top: 300px;
+}
+/* #a1 h1{
+    font-size: 30px;
+} */
+#a1 button{
+    height: 50px;
+    width: 160px;
+    border-radius: 20px;
+    background-color: #007bff;
+    border: 1px solid #007bff;
+}
+#a1 button:hover{
+    background-color: black;
+    border: 1px solid black;
+}
+#btn2{
+    height: 50px;
+    width: 160px;
+    border-radius: 20px;
+    background-color: #007bff;
+    border: 1px solid #007bff;
+}
+#btn2:hover{
+    background-color: black;
+    border: 1px solid black;
+}
+
+#our{
+    width: 60%;
+}
+#ss{
+    width: 61%;
+}
+#seer{
+    width: 60%;
+}
+#faq{
+    width: 99%;
+}
+#blogs{
+    width: 60%;
+}
+#contact{
+    width: 99%;
+}
+.cons{
+    width: 65%;
+}
+#contact button{
+    height: 50px;
+    width: 160px;
+    background-color: #007bff;
+    border: 1px solid #007bff;
+    border-radius: 20px;
+     color: white;
+}
+footer{
+    width: 100%;
+    background-color: #333333;
+}
+.foo{
+    width: 60%;
+}
+.fa-facebook-f,.fa-twitter,.fa-instagram,.fa-linkedin-in{
+    color: #999999;
+    cursor: pointer;
+}
+.face,.link,.inst,.twi{
+    color: #999999;
+}
+.face :hover{
+    color: white;
+}
+.link :hover{
+    color: white;
+}
+.inst :hover{
+    color: white;
+}
+.twi :hover{
+    color: white;
+}
+#nav{
+    width: 75%;
+}
+#as a{
+    color: #999999;
+}
+
+@media(max-width:980px){
+    #ss{
+        width: 100%;
+    }
+    #our{
+        width: 100%;
+    }
+    #seer{
+        width: 100%;
+    }
+}
+@media(max-width:1200px){
+    #blogs{
+        width: 95%;
+    }
+    #a1{
+        width: 95%;
+    }
+    #nav{
+        width: 100%;
+        color: #007bff;
+        /* background-color: #007bff; */
+    }
+    #tes{
+        width: 97%;
+    }
+    #faq{
+        width: 95%;
+    }
+    .foo{
+        width: 90%;
+    }
+    .cons{
+        width: 90%;
+    }
+    #ss{
+        width: 100%;
+    }
+    #seer{
+        width: 100%;
+    }
+}
+@media(max-width:576px){
+    #a1 h1{
+        font-size: 30px;
+    }
+}
+@media(max-width:767px)
+{
+    #nav{
+        width: 100%;
+        color: #007bff;
+        background-color: #007bff;
+    }
+}
