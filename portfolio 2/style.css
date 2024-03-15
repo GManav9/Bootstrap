@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #212428;
+    font-family: "Montserrat", sans-serif;
+}
+#in{
+    width: 100%;
+}
+.navbar-nav li a{
+    color: #C4CFDE;
+}
+.head{
+    width: 95%;
+} 
+#menu a{
+    position: relative;
+}
+#menu a:hover{
+    color: #ff014f;
+}
+#menu a::before{
+    content: " ";
+    background-color: red;
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    transition: 1s;
+}
+#menu a:hover::before{
+    width: 100%;
+}
+.shop{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    box-shadow:10px 10px 19px #1c1e22,-10px -10px 19px #262a2e ;
+    background-color: linear-gradient(145deg, #1e2024, #23272b);
+    cursor: pointer;
+}
+#btn1{
+    height: 50px;
+    width: 160px;
+    box-shadow:10px 10px 19px #1c1e22,-10px -10px 19px #262a2e ;
+    background-color: linear-gradient(145deg, #1e2024, #23272b);
+    border: 1px solid #1e2024;
+    color: #ff014f;
+}
+#a1{
+    width: 70%;
+}
+.bg1{
+    height: 650px;
+    box-shadow:10px 10px 19px #1c1e22,-10px -10px 19px #262a2e ;
+    background-color: linear-gradient(145deg, #1e2024, #23272b);
+}
+.cd-intro{
+    color: white;
+}
+.face,.twi,.link{
+    height: 80px;
+    width: 80px;
+    box-shadow:10px 10px 19px #1c1e22,-10px -10px 19px #262a2e ;
+    background-color: linear-gradient(145deg, #1e2024, #23272b);
+}
+.fea{
+    width: 70%;
+}
+#c1{
+    margin-top: 150px;
+}
+#c1 h1{
+    font-size: 60px;
+}
+.card-body h5{
+    font-size: 30px;
+}
+#f1{
+    width: 28%;
+    box-shadow:10px 10px 19px #1c1e22,-10px -10px 19px #262a2e ;
+    background-color: linear-gradient(145deg, #1e2024, #23272b);
+}
+#visit{
+    background-color: #212428;
+}
+.vs{
+    width: 65%;
+}
+.vs h1{
+    font-size: 60px;
+}
+
+#we1{
+    width: 29%;
+    box-shadow:10px 10px 19px #1c1e22,-10px -10px 19px #262a2e ;
+}
+.blog{
+    width: 60%;
+}
+#bl1{
+    box-shadow:10px 10px 19px #1c1e22,-10px -10px 19px #262a2e ;
+}
+.contact{
+    width: 70%;
+}
+#contact1{
+    background-color: linear-gradient(145deg, #1e2024, #23272b);
+    box-shadow:15px 15px 22px #1c1e22,-15px -15px 22px #262a2e ;
+}
+#btn3{
+    width: 150px;
+    height: 60px;
+    background-color: linear-gradient(145deg, #1e2024, #23272b);
+    box-shadow:15px 15px 22px #1c1e22,-15px -15px 22px #262a2e ;
+    color: white;
+}
+.foo{
+    width: 65%;
+}
+
+#nas{
+    width: 75%;
+}
+.alls a{
+    color: white;
+    position: relative;
+}
+.alls a:hover{
+    color: #ff014f;
+}
+.alls a::before{
+    content: " ";
+    background-color: red;
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    transition: 1s;
+}
+.alls a:hover::before{
+    width: 100%;
+}
+@media(max-width:1200px){
+    #a1{
+        width: 90%;        
+    }
+    .bg1{
+        height: 450px;
+        width: 350px;
+    }
+    .bg1 img{
+        height: 450px;
+        width: 350px;
+    }
+    .fea{
+        width: 90%;
+    }
+    #f1{
+        width: 30%;
+    }
+    .card-body h5{
+        font-size: 25px;
+    }
+    
+    .vs{
+        width: 90%;
+    }
+    .blog{
+        width: 90%;
+    }
+    .contact{
+        width: 90%;
+    }
+    #nas{
+        width: 100%;
+    }
+    .foo{
+        width: 90%;
+    }
+}
+@media(max-width:992px)
+{
+    #f1{
+        width: 40%;
+    }
+    .card-body h5{
+        font-size: 25px;
+    }
+    #we1{
+        width: 46%;
+        box-shadow:10px 10px 19px #1c1e22,-10px -10px 19px #262a2e ;
+    }
+}
+
+@media(max-width:768px)
+{
+    #f1{
+        width: 47%;
+    }
+    .card-body h5{
+        font-size: 25px;
+    }
+
+}
+@media(max-width:576px)
+{
+    #f1{
+        width: 90%;
+    }
+    #we1{
+        width: 90%;
+        box-shadow:10px 10px 19px #1c1e22,-10px -10px 19px #262a2e ;
+    }
+}
+@media(max-width:480px)
+{
+    #f1{
+        width: 90%;
+    }
+}
