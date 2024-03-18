@@ -1,0 +1,369 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+#bg1{
+    width: 99.80%;
+    height: 900px;
+    background-image: url(images/bg-image-24.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#bd1{
+    height: 50px;
+    width: 170px;
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 40px;
+    color: white;
+}
+.fa-cart-shopping:hover{
+    color: #fd4766;
+}
+#bd1:hover{
+    background-color: #fd4766;
+    border: 1px solid #fd4766;
+}
+#nav li a{
+    color: white;
+}
+#nav{
+    color: white;
+}
+#nav li a:hover{
+    color: #fd4766;
+    transition: 1s;
+}
+.fa-cart-shopping :hover{
+    color: #fd4766;
+}
+#bg2{
+    width: 99%;
+    height: 900px;
+    background-image: url(images/dp-big-portfolio-03.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#bg3{
+    width: 99%;
+    height: 900px;
+    background-image: url(images/bg-image-23.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.hero{
+    margin-top: 210px;
+}
+.hero button{
+    height: 60px;
+    width: 180px;
+    background-color: #fd4766;
+    border: 1px solid #fd4766;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    transition: 1s;
+    margin-top: 20px;
+}
+.hero button:hover{
+    background-color: transparent;
+    color: #fd4766;
+}
+#help{
+    width: 97%;
+}
+#our{
+    width: 60%;
+}
+#game{
+    width: 97%;
+}
+.games{
+    width: 60%;
+}
+.games button:hover{
+    background-color: #fd4766;
+    border: 1px solid #fd4766;
+}
+.games button{
+    height: 40px;
+    width: 140px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    transition: 1s;
+}
+#games1{
+    width: 30%;
+    height: 550px;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(images/pt-7-390x532.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#games2{
+    width: 30%;
+    height: 550px;
+    background-image:  linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(images/pt-8-390x532.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#games3{
+    width: 30%;
+    height: 550px;
+    background-image:  linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(images/dp-big-portfolio-03-390x532.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#games4{
+    width: 30%;
+    height: 550px;
+    background-image:  linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(images/photo-editing-390x532.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#games5{
+    width: 30%;
+    height: 550px;
+    background-image:  linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(images/app-development-390x532.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#games6{
+    width: 30%;
+    height: 550px;
+    background-image :linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),  url(images/photoshop-390x532.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#fi{
+    height: 50px;
+    width: 220px;
+    background-color: #fd4766;
+    border: 1px solid #fd4766;
+    cursor: pointer;
+    border-radius: 40px;
+    transition: 1s;
+}
+#fi:hover{
+    background-color: transparent;
+    border: 1px solid #fd4766;
+    color: #fd4766;
+}
+.about{
+    width: 60%;
+}
+.abo1{
+    height: 500px;
+    background-image: url(images/about-3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#abn1{
+    height: 50px;
+    width: 160px;
+    background-color: #fd4766;
+    border: 1px solid #fd4766;
+    border-radius: 20px;
+    color: white;
+    transition: 1s;
+}
+#abn1:hover{
+    background-color: transparent;
+    border: 1px solid #fd4766;
+    color: black;
+}
+
+.latest{
+    width: 60%;
+}
+#l1{
+    height: 450px;
+    width: 30%;
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(images/new-blog-07-390x532.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+}
+#l2{
+    height: 450px;
+    width: 30%;
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(images/new-blog-06-390x532.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+}
+#l3{
+    height: 450px;
+    width: 30%;
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(images/new-blog-05-390x532.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+}
+#work{
+    width: 100%;
+    margin-top: 100px;
+}
+.brands{
+    width: 60%;
+}
+/* .brands1{
+    width: 33%;
+} */
+footer{
+    background: #010001;
+}
+.foo{
+    width: 60%;
+}
+.foo a:hover{
+    color: #fd4766;
+}
+.foo a{
+    position: relative;
+}
+.socails .fa-facebook-f:hover{
+    color: #fd4766;
+    margin-bottom: 10px;
+    transition: 1s;
+}
+.socails .fa-linkedin-in:hover{
+    color: #fd4766;
+    margin-bottom: 10px;
+    transition: 1s;
+    font-size: 18px;
+}
+.socails .fa-twitter:hover{
+    color: #fd4766;
+    margin-bottom: 10px;
+    transition: 1s;
+    font-size: 18px;
+}
+.socails .fa-instagram:hover{
+    color: #fd4766;
+    margin-bottom: 10px;
+    transition: 1s;
+    font-size: 18px;
+}
+.foo a::before{
+    content: " ";
+    background-color: red;
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    transition: 1s;
+}
+.foo a:hover::before{
+    width: 30%;
+}
+#btnf{
+    height: 80px;
+    width: 250px;
+    background-color: transparent;
+    border: 1px solid white;
+    cursor: pointer;
+    color: white;
+    border-radius: 40px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    transition: 1s;
+}
+#btnf:hover{
+    background-color: #fd4766;
+    border: 1px solid #fd4766;
+}
+.a a{left: 1px;
+    color: #757575;
+}
+#foo4 h6{
+    color: #757575;
+}
+.navbar-nav
+{
+    width: 50%;
+}
+#de{
+    width: 50%;
+}
+@media(max-width:1200px){
+    #our{
+        width: 90%;
+    }
+    .about{
+        width: 90%;
+    }
+    .latest{
+        width: 90%;
+    }
+    #l1,#l2{
+        width: 48%;
+        margin-top: 10px;
+    }
+    #l3{
+        width: 90%;
+        margin-top: 10px;
+    }
+    .brands{
+        width: 90%;
+    }
+    .foo{
+        width: 90%;
+    }
+    footer{
+        width: 99%;
+    }
+    #btnf{
+        height: 40px;
+        width: 160px;
+        font-size: 14px ;
+    }
+    .games{
+        width: 90%;
+    }
+    #games1,#games2,#games3,#games4,#games5,#games6{
+        width: 48%;
+    }
+    .navbar-nav{
+        width: 90%;
+    }
+    .hero p{
+        font-size: 18px;
+    }
+    #de{
+        width: 100%;
+    }
+}
+
+
+@media(max-width:576px){
+    .games{
+        flex-direction: column;
+        width: 90%;
+    }
+    #games1,#games2,#games3,#games4,#games5,#games6{
+        width: 90%;
+    }
+    #l1,#l2,#l3{
+        width: 90%;
+        margin-top: 10px;
+    }
+    
+}
