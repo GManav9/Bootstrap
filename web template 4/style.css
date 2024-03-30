@@ -1,0 +1,494 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+#a1{
+    height: 930px;
+    width: 100%;
+    background-image: url(images/banner-bg-two.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+header{
+    width: 68%;
+}
+.collapse ul li a{
+    color: white;
+    position: relative;
+}
+.collapse ul li a:hover{
+    color: #F01543;
+}
+.heart{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #122833;
+    border: 1px solid #6C727F;
+    cursor: pointer;
+}
+
+.navbar-toggler-icon{
+    background-color: #F01543;
+}
+.heart:hover{
+    background-color: #F01543;
+    color: white;
+    border: 1px solid #F01543;
+}
+.cart{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #122833;
+    border: 1px solid #6C727F;
+    cursor: pointer;
+}
+
+.cart:hover{
+    background-color: #F01543;
+    color: white;
+    border: 1px solid #F01543;
+}
+#btn1{
+    height: 50px;
+    width: 120px;
+    background-color: #F01543;
+    border: 1px solid #F01543;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+    border-radius: 10px;
+}
+#btn2{
+    height: 50px;
+    width: 120px;
+    background-color: transparent;
+    border: 1px solid white;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+    border-radius: 10px;
+}
+.craft{
+    width: 68%;
+}
+.exbu{
+    background-color: white;
+    width: 80%;
+    height: 80px;
+    border-radius: 10px;
+}
+#btn3{
+    height: 65px;
+    width: 180px;
+    background-color: #F01543;
+    border: 1px solid #F01543;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+    border-radius: 10px;
+}
+#btn4{
+    height: 65px;
+    width: 180px;
+    background-color: transparent;
+    border: 1px solid #F01543;
+    cursor: pointer;
+    color: #F01543;
+    font-weight: 600;
+    border-radius: 10px;
+}
+#btn5{
+    height: 65px;
+    width: 180px;
+    background-color: transparent;
+    border: 1px solid #F01543;
+    cursor: pointer;
+    color: #F01543;
+    font-weight: 600;
+    border-radius: 10px;
+}
+.burger1{
+    height: 80px;
+    width: 80px;
+    background-color: white;
+    border-radius: 50%;
+}
+#a2{
+    /* height: 900px; */
+    width: 100%;
+    background-image: url(images/categories-bg.png);
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.categories{
+    width: 68%;
+}
+/* #F4F4F6; */
+.bu1,.bu2,.bu3,.bu4{
+    height: 140px;
+    width: 23%;
+    background-color: #F4F4F6;
+    border-radius: 20px;
+}
+.burger1{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-image: url(images/);
+}
+
+
+
+#a3{
+    background-image: url(images/traditional-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.some{
+    width: 68%;
+}
+#btn6{
+    color: #6C727F;
+}
+#btn7{
+    height: 50px;
+    width: 160px;
+    background-color: #F01543;
+    border: 1px solid #F01543;
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+    font-size: 19px;
+    font-weight: 600;
+}
+#a4{
+    background-image: url(images/Process-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.process{
+    width: 90%;
+}
+.loaction{
+    height: 70px;
+    width: 70px;
+    background-color:  rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+#po1{
+    background-color: #0D1634;
+}
+.most{
+    width: 70%;
+}
+#m1{
+    height: 250px;
+    width: 250px;
+    background-image: url(images/popular-1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#m1{
+    height: 250px;
+    width: 250px;
+    background-image: url(images/popular-1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#m3{
+    height: 250px;
+    width: 250px;
+    background-image: url(images/popular-2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#m4{
+    height: 250px;
+    width: 250px;
+    background-image: url(images/popular-3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#m5{
+    height: 250px;
+    width: 250px;
+    background-image: url(images/popular-4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#m6{
+    height: 250px;
+    width: 250px;
+    background-image: url(images/popular-5.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#m7{
+    height: 250px;
+    width: 250px;
+    background-image: url(images/popular-6.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#btn8{
+    height: 50px;
+    width: 160px;
+    background-color: transparent;
+    border: 1px solid #F01543;
+    cursor: pointer;
+    color: #6C727F;
+    border-radius: 10px;
+    font-size: 19px;
+    font-weight: 600;
+}
+#a6{
+    background-color: #0D1634;
+}
+.whats{
+    width: 70%;
+}
+#a7{
+    background-image: url(images/rest-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.faq{
+    width: 68%;
+}
+.google{
+    width: 68%;
+}
+#btn9{
+    height: 60px;
+    width: 220px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 40px;
+}
+#btn10{
+    height: 60px;
+    width: 220px;
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    border-radius: 40px;
+}
+footer{
+    background-image: url(images/Footers-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.foo{
+    width: 70%;
+}
+.all a{
+    color: white;
+}
+.foo input{
+    height: 50px;
+    width: 250px;
+    background-color: rgba(231, 229, 234, 0.2);
+    border: 1px solid rgba(231, 229, 234, 0.2);
+    border-radius: 5px;
+}
+#btn11{
+    height: 50px;
+    width: 120px;
+    background-color: #F01543;
+    border: 1px solid  #F01543;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+}
+#foo1{
+    height: 250px;
+}
+
+
+
+#btn1:hover{
+    background-color: transparent;
+    transition: 1s;
+    border: 1px solid white;
+}
+#btn2:hover{
+    background-color: #F01543;
+    color: white;
+    border: 1px solid #F01543;
+    transition: 1s;
+}
+#btn3:hover{
+    background-color: transparent;
+    transition: 1s;
+    border: 1px solid #F01543;
+    color: #F01543;
+}
+#btn4:hover{
+    background-color: #F01543;
+    color: white;
+    border: 1px solid #F01543;
+    transition: 1s;
+}
+#btn5:hover{
+    background-color: #F01543;
+    color: white;
+    border: 1px solid #F01543;
+    transition: 1s;
+}
+
+.ces :hover{
+    background-color: #F01543;
+    color: white;
+}
+.card{
+    overflow: hidden;
+    transition: 1s;
+}
+.some .card:hover img{
+    transform: scale(1.1);
+    transition: 1s;
+}
+#btn6:hover{
+    background-color: #F01543;
+    color: white;
+    transition: 1s;
+}
+#btn8:hover{
+    background-color: #F01543;
+    color: white;
+    transition: 1s;
+}
+
+
+
+
+
+
+
+
+
+@media(max-width:1200px){
+    header{
+        width: 90%;
+    }
+    .craft{
+        width: 90%;
+    }
+    .most{
+        width: 90%;
+    }
+    .whats{
+        width: 90%;
+    }
+    .exbu{
+        background-color: white;
+        width: 100%;
+        height: 80px;
+        border-radius: 10px;
+    }
+    .categories{
+        width: 90%;
+    }
+    .ces{
+        flex-wrap: wrap;
+    }
+    .some{
+        width: 90%;
+    }
+    .google{
+        width: 90%;
+    }
+    .foo{
+        width: 90%;
+    }
+}
+
+@media(max-width:992px)
+{
+    .exbu{
+        width: 70%;
+    }
+    .bu1,.bu2,.bu3,.bu4{
+        height: 140px;
+        width:  45%;
+        background-color: #F4F4F6;
+        border-radius: 20px;
+        margin-top: 20px;
+    }
+}
+
+@media(max-width:576px)
+{
+    .exbu{
+        width: 100%;
+    }
+    #btn3{
+        height: 65px;
+        width: 120px;
+    }
+    #btn4{
+        height: 65px;
+        width: 120px;
+    }
+    #btn5{
+        height: 65px;
+        width: 120px;
+    }
+    .bu1,.bu2,.bu3,.bu4{
+        height: 140px;
+        width: 90%;
+        background-color: #F4F4F6;
+        border-radius: 20px;
+        margin-top: 20px;
+    }
+    
+#btn9{
+    height: 60px;
+    width: 180px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 40px;
+}
+#btn10{
+    height: 60px;
+    width: 180px;
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    border-radius: 40px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
