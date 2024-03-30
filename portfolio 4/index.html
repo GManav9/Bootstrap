@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+
+    <link rel="stylesheet" href="slick-1.8.1/slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="slick-1.8.1/slick-1.8.1/slick/slick.css">
+
+    <!-- bootstrap cdns-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <!-- bootstrap cdns-->
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font awesome cdn -->
+
+
+    <!-- google fonts -->    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- google fonts -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+      integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
+      integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+</head>
+<style type="text/css">
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .slider {
+        width: 50%;
+        margin: 100px auto;
+    }
+
+    .slick-slide {
+      margin: 0px 20px;
+    }
+
+    .slick-slide img {
+      width: 100%;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: black;
+    }
+
+
+    .slick-slide {
+      transition: all ease-in-out .3s;
+      opacity: .2;
+    }
+    
+    .slick-active {
+      opacity: .5;
+    }
+
+    .slick-current {
+      opacity: 1;
+    }
+  </style>
+
+<style>
+    
+    .progress {
+      width: 150px;
+      height: 150px;
+      background: none;
+      position: relative;
+    }
+    
+    .progress::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      border: 6px solid #eee;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    
+    .progress>span {
+      width: 50%;
+      height: 100%;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      z-index: 1;
+    }
+    
+    .progress .progress-left {
+      left: 0;
+    }
+    
+    .progress .progress-bar {
+      width: 100%;
+      height: 100%;
+      background: none;
+      border-width: 6px;
+      border-style: solid;
+      position: absolute;
+      top: 0;
+    }
+    
+    .progress .progress-left .progress-bar {
+      left: 100%;
+      border-top-right-radius: 80px;
+      border-bottom-right-radius: 80px;
+      border-left: 0;
+      -webkit-transform-origin: center left;
+      transform-origin: center left;
+    }
+    
+    .progress .progress-right {
+      right: 0;
+    }
+    
+    .progress .progress-right .progress-bar {
+      left: -100%;
+      border-top-left-radius: 80px;
+      border-bottom-left-radius: 80px;
+      border-right: 0;
+      -webkit-transform-origin: center right;
+      transform-origin: center right;
+    }
+    
+    .progress .progress-value {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    
+    body {
+      min-height: 100vh;
+    }
+    
+    .rounded-lg {
+      border-radius: 1rem;
+    }
+    
+    .text-gray {
+      color: #aaa;
+    }
+    
+    div.h4 {
+      line-height: 1rem;
+    }
+    </style>
+<body>
+
+    <header class="navbar navbar-expand-lg">
+        <div class="container">
+        <div class="logo">
+            <a href="" class="navbar-brand text-dark fs-2">CLYDE</a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <nav class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav text-center ms-auto nav-underline">
+                <li class="nav-item"><a href="" class="nav-link active text-dark">HOME</a></li>
+                <li class="nav-item"><a href="" class="nav-link active text-dark">ABOUT</a></li>
+                <li class="nav-item"><a href="" class="nav-link text-dark">SKILLS</a></li>
+                <li class="nav-item dropdown">
+                    <a href="" class="nav-link text-dark dropdown-toggle" data-bs-toggle="dropdown">SERVICES</a>
+                    <ul class="dropdown-menu text-center">
+                        <li><a href="" class="dropdown-item text-dark">Web Design</a></li>
+                        <li><a href="" class="dropdown-item text-dark">Web Application</a></li>
+                        <li><a href="" class="dropdown-item text-dark">Web Development</a></li>
+                        <li><a href="" class="dropdown-item text-dark">Banner Deign</a></li>
+                        <li><a href="" class="dropdown-item text-dark">Branding</a></li>
+                        <li><a href="" class="dropdown-item text-dark">Icon Design</a></li>
+                        <li><a href="" class="dropdown-item text-dark">Graphic Design</a></li>
+                        <li><a href="" class="dropdown-item text-dark">SEO</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="" class="nav-link text-dark">PROJECTS</a></li>
+                <li class="nav-item"><a href="" class="nav-link text-dark">BLOG</a></li>
+                <li class="nav-item"><a href="" class="nav-link text-dark">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+    
+
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="hero d-flex align-items-center">
+                <div class="info">
+                    <h5 class="">HELLO !! THIS IS CLYDE.</h5>
+                    <h1 style="font-weight: bolder;" class="display-1">CREATIVE <span style="color: #b1b493;"> UI/UX </span></h1>
+                    <h2 style="font-weight: bolder;">DESIGNER & DEVELOPER</h2>
+                    <button type="button" class="btn text-light mt-4" style="background-color: #b1b493;">Hire Me</button>
+                    <button type="button" class="btn text-light mt-4" style="border: 2px solid #b1b493;" id="btn2">Download CV</button>
+                </div>
+            </div>
+
+          </div>
+          <div class="carousel-item">
+
+            <div class="hero1 d-flex align-items-center">
+                <div class="info">
+                    <h5 class="">HELLO !! THIS IS CLYDE.</h5>
+                    <h1 style="font-weight: bolder;" class="display-1">CREATIVE <span style="color: #b1b493;"> UI/UX </span></h1>
+                    <h2 style="font-weight: bolder;">DESIGNER & DEVELOPER</h2>
+                    <button type="button" class="btn text-light mt-4" style="background-color: #b1b493;">Hire Me</button>
+                    <button type="button" class="btn text-light mt-4" style="border: 2px solid #b1b493;" id="btn2">Download CV</button>
+                </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+    
+
+
+    <section id="countries">
+        <div class="mn container justify-content-center align-items-center">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="mvs col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 d-flex justify-content-center align-items-center mb-5 mt-5">
+                    <div class="icon d-flex justify-content-center align-items-center" style="background-color: #b1b493;"><img src="img/suitcase.png" alt=""></div>
+                    <div class="text col-5 col-sm-5 col-md-8 col-lg-9">
+                        <h1 class="counter">750</h1>
+                        <h6 style="color: #b1b493;">PROJECT COMPLETE</h6>
+                    </div>
+                </div>
+                <div class="mvs col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 d-flex justify-content-center align-items-center mb-5 mt-5">
+                    <div class="icon d-flex justify-content-center align-items-center" style="background-color: #b1b493;"><img src="img/suitcase.png" alt=""></div>
+                    <div class="text col-5 col-sm-5 col-md-8 col-lg-9">
+                        <h1 class="counter">568</h1>
+                        <h6 style="color: #b1b493;">HAPPY CLIENTS</h6>
+                    </div>
+                </div>
+                <div class="mvs col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 d-flex justify-content-center align-items-center mb-5 mt-5">
+                    <div class="icon d-flex justify-content-center align-items-center" style="background-color: #b1b493;"><img src="img/suitcase.png" alt=""></div>
+                    <div class="text col-5 col-sm-5 col-md-8 col-lg-9">
+                        <h1 class="counter">478</h1>
+                        <h6 style="color: #b1b493;">CUPS OF COFFEE</h6>
+                    </div>
+                </div>
+                <div class="mvs col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 d-flex justify-content-center align-items-center mb-5 mt-5">
+                    <div class="icon d-flex justify-content-center align-items-center" style="background-color: #b1b493;"><img src="img/suitcase.png" alt=""></div>
+                    <div class="text col-5 col-sm-5 col-md-8 col-lg-9">
+                        <h1 class="counter">780</h1>
+                        <h6 style="color: #b1b493;">YEARS EXPERIENCED</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="about" class="d-flex justify-content-center align-items-center mt-5 mb-5 h-auto">
+        <div class="container">
+            <div class="row h-100 d-flex  justify-content-center align-items-center">
+                <div class="col-11 col-sm-11 col-md-9 col-lg-6  col-xl-5 img-fluid h-100" id="abn1">
+                    <img src="img/about-1.jpg" class="img-fluid">
+                </div>
+                <div class="col-11 col-sm-11 col-md-9 col-lg-6  h-75 " id="abn2">
+                    <h5 class="mt-5">MY INTRO</h5>
+                    <h1>About Me</h1>
+                    <p class="mt-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                    <div class="row" id="names">
+                        <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-3 mt-4">
+                            <h4>Name:</h4>
+                            <h4>Date of Birth:</h4>
+                            <h4>Address:</h4>
+                            <h4>Zip Code:</h4>
+                            <h4>Email:</h4>
+                            <h4>Phone:</h4>
+                        </div>
+                        <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-6 mt-4" id="answer">
+                            <h4>Clyde Nowitzki</h4>
+                            <h4>January 01, 1990</h4>
+                            <h4>San Francisco CA 97987 USA</h4>
+                            <h4>1000</h4>
+                            <h4>cydenowitzki@gmail.com</h4>
+                            <h4>+1-2234-5678-9-0</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="container py-5">
+        <div class="row">
+      
+          <div class="col-12 text-center">
+            <h5 style="color: #b1b493;">SKILLS</h5>
+            <h1>My Skills</h1>
+            <p style="color: #999999;" class="mt-3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+        </div>
+      
+          <div class="col-xl-4 col-lg-6 mb-4 mt-5 mb-5">
+            <div class="bg-white rounded-lg p-5 shadow">
+              <h2 class="h6 font-weight-bold text-center mb-4">CSS</h2>
+      
+              <div class="progress mx-auto" data-value='95'>
+                <span class="progress-left">
+                              <span class="progress-bar border-primary"></span>
+                </span>
+                <span class="progress-right">
+                              <span class="progress-bar border-primary"></span>
+                </span>
+                <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+                  <div class="h2 font-weight-bold">95<sup class="small">%</sup></div>
+                </div>
+              </div>
+      
+              <div class="row text-center mt-4">
+                <div class="col-6 border-right">
+                  <div class="h4 font-weight-bold mb-0">28%</div><span class="small text-gray">Last week</span>
+                </div>
+                <div class="col-6">
+                  <div class="h4 font-weight-bold mb-0">60%</div><span class="small text-gray">Last month</span>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-xl-4 col-lg-6 mb-4 mt-5 mb-5">
+            <div class="bg-white rounded-lg p-5 shadow">
+              <h2 class="h6 font-weight-bold text-center mb-4">HTML</h2>
+      
+              <div class="progress mx-auto" data-value='98'>
+                <span class="progress-left">
+                              <span class="progress-bar border-danger"></span>
+                </span>
+                <span class="progress-right">
+                              <span class="progress-bar border-danger"></span>
+                </span>
+                <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+                  <div class="h2 font-weight-bold">98<sup class="small">%</sup></div>
+                </div>
+              </div>
+      
+              <div class="row text-center mt-4">
+                <div class="col-6 border-right">
+                  <div class="h4 font-weight-bold mb-0">28%</div><span class="small text-gray">Last week</span>
+                </div>
+                <div class="col-6">
+                  <div class="h4 font-weight-bold mb-0">60%</div><span class="small text-gray">Last month</span>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-xl-4 col-lg-6 mb-4 mt-5 mb-5">
+            <div class="bg-white rounded-lg p-5 shadow">
+              <h2 class="h6 font-weight-bold text-center mb-4">J Query</h2>
+
+
+              <div class="progress mx-auto" data-value='68'>
+                <span class="progress-left">
+                              <span class="progress-bar border-dark"></span>
+                </span>
+                <span class="progress-right">
+                              <span class="progress-bar border-dark"></span>
+                </span>
+                <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+                  <div class="h2 font-weight-bold">68<sup class="small">%</sup></div>
+                </div>
+              </div>
+      
+              <div class="row text-center mt-4">
+                <div class="col-6 border-right">
+                  <div class="h4 font-weight-bold mb-0">28%</div><span class="small text-gray">Last week</span>
+                </div>
+                <div class="col-6">
+                  <div class="h4 font-weight-bold mb-0">60%</div><span class="small text-gray">Last month</span>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-xl-4 col-lg-6 mb-4 mt-5 mb-5">
+            <div class="bg-white rounded-lg p-5 shadow">
+              <h2 class="h6 font-weight-bold text-center mb-4">Photoshop</h2>
+
+
+              <div class="progress mx-auto" data-value='80'>
+                <span class="progress-left">
+                              <span class="progress-bar border-info"></span>
+                </span>
+                <span class="progress-right">
+                              <span class="progress-bar border-info"></span>
+                </span>
+                <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+                  <div class="h2 font-weight-bold">80<sup class="small">%</sup></div>
+                </div>
+              </div>
+      
+              <div class="row text-center mt-4">
+                <div class="col-6 border-right">
+                  <div class="h4 font-weight-bold mb-0">28%</div><span class="small text-gray">Last week</span>
+                </div>
+                <div class="col-6">
+                  <div class="h4 font-weight-bold mb-0">60%</div><span class="small text-gray">Last month</span>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-xl-4 col-lg-6 mb-4 mt-5 mb-5">
+            <div class="bg-white rounded-lg p-5 shadow">
+              <h2 class="h6 font-weight-bold text-center mb-4">Wordpress</h2>
+      
+              <div class="progress mx-auto" data-value='76'>
+                <span class="progress-left">
+                              <span class="progress-bar border-success"></span>
+                </span>
+                <span class="progress-right">
+                              <span class="progress-bar border-success"></span>
+                </span>
+                <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+                  <div class="h2 font-weight-bold">76<sup class="small">%</sup></div>
+                </div>
+              </div>
+      
+              <div class="row text-center mt-4">
+                <div class="col-6 border-right">
+                  <div class="h4 font-weight-bold mb-0">28%</div><span class="small text-gray">Last week</span>
+                </div>
+                <div class="col-6">
+                  <div class="h4 font-weight-bold mb-0">60%</div><span class="small text-gray">Last month</span>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-xl-4 col-lg-6 mb-4 mt-5 mb-5">
+            <div class="bg-white rounded-lg p-5 shadow">
+              <h2 class="h6 font-weight-bold text-center mb-4">SEO</h2>
+      
+              <div class="progress mx-auto" data-value='95'>
+                <span class="progress-left">
+                              <span class="progress-bar border-warning"></span>
+                </span>
+                <span class="progress-right">
+                              <span class="progress-bar border-warning"></span>
+                </span>
+                <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+                  <div class="h2 font-weight-bold">95<sup class="small">%</sup></div>
+                </div>
+              </div>
+      
+              <div class="row text-center mt-4">
+                <div class="col-6 border-right">
+                  <div class="h4 font-weight-bold mb-0">28%</div><span class="small text-gray">Last week</span>
+                </div>
+                <div class="col-6">
+                  <div class="h4 font-weight-bold mb-0">60%</div><span class="small text-gray">Last month</span>
+                </div>
+              </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+
+      <section>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+          <div class="carousel-indicators">
+              <button type="button" style="visibility: hidden;" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" style="visibility: hidden;" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" style="visibility: hidden;" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active text-center" data-bs-interval="10000">
+              <i class="fa-solid fa-quote-left text-center display-1"></i>
+              <p class="fs-5 text-center w-75 m-auto">Far far away, behind the word mountains, far from the countries <br> Vokalia and Consonantia, there live the blind texts. <br>
+                Far far away, behind the word mountains, <br> far from the countries Vokalia and Consonantia, there live the blind texts.
+              </p>
+              <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-xl-1 col-3 col-sm-3 col-md-2 col-lg-2 mt-5">
+                  <div class="c1s"></div>
+                </div>
+                <div class="col-xl-2 col-5 col-sm-5 col-md-4 mt-5 col-lg-4 text-start">
+                  <h3>Roger Scott</h3>
+                  <h6>Marketing Manager</h6>
+                </div>
+              </div>
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div>
+            <div class="carousel-item text-center" data-bs-interval="2000">
+              <i class="fa-solid fa-quote-left text-center display-1"></i>
+              <p class="fs-5 text-center">Far far away, behind the word mountains, far from the countries <br> Vokalia and Consonantia, there live the blind texts. <br>
+                Far far away, behind the word mountains, <br> far from the countries Vokalia and Consonantia, there live the blind texts.
+              </p>
+              <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-1">
+                  <div class="c2s"></div>
+                </div>
+                <div class="col-2 text-start">
+                  <h3>Roger Scott</h3>
+                  <h6>Marketing Manager</h6>
+                </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+    <section id="iam" class="mt-5 mb-5 d-flex flex-wrap justify-content-center align-items-center">
+            <div class="row mt-5 mb-5">
+                <div class="col-12 text-center">
+                    <h5 style="color: #b1b493;">I AM GREAT AT</h5>
+                    <h1>We do awesome services for our clients</h1>
+                    <p style="color: #999999;" class="mt-3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center align-items-center g-4" id="pass">
+                <div class="col-12 col-sm-10 col-md-5  col-lg-4 col-xl-2  border border-2 d-flex flex-column justify-content-evenly align-items-center" id="master" style=" box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);">
+                    <div class="we1 d-flex justify-content-center align-items-center mb-4 mt-4">
+                        <img src="img/web-design.png" alt="" height="40px" width="35px"></div>
+                        <h4>Web Design</h4>
+                        <p class="text-center mt-2 mb-4">A small river named Duden flows by their place and supplies.</p>
+                </div>
+                <div class="col-12 col-sm-10 col-md-5  col-lg-4 col-xl-2  border border-2 d-flex flex-column justify-content-evenly align-items-center" id="master" style=" box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); ">
+                    <div class="we1 d-flex justify-content-center align-items-center mb-4 mt-4">
+                        <img src="img/application.png" alt="" height="40px" width="35px"></div>
+                        <h4>Web Application</h4>
+                        <p class="text-center mt-2 mb-4">A small river named Duden flows by their place and supplies.</p>
+                </div>
+                <div class="col-12 col-sm-10 col-md-5  col-lg-4 col-xl-2  border border-2 d-flex flex-column justify-content-evenly align-items-center" id="master" style=" box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);">
+                    <div class="we1 d-flex justify-content-center align-items-center mb-4 mt-4">
+                        <img src="img/coding.png" alt="" height="40px" width="35px"></div>
+                        <h4>Web Development</h4>
+                        <p class="text-center mt-2 mb-4">A small river named Duden flows by their place and supplies.</p>
+                </div>
+                <div class="col-12 col-sm-10 col-md-5  col-lg-4 col-xl-2  border border-2 d-flex flex-column justify-content-evenly align-items-center" id="master" style=" box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);">
+                    <div class="we1 d-flex justify-content-center align-items-center mb-4 mt-4">
+                        <img src="img/advertising.png" alt="" height="40px" width="35px"></div>
+                        <h4>Banner Design</h4>
+                        <p class="text-center mt-2 mb-4">A small river named Duden flows by their place and supplies.</p>
+                </div>
+                <div class="col-12 col-sm-10 col-md-5  col-lg-4 col-xl-2  border border-2 d-flex flex-column justify-content-evenly align-items-center" id="master" style=" box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);">
+                    <div class="we1 d-flex justify-content-center align-items-center mb-4 mt-4">
+                        <img src="img/branding.png" alt="" height="40px" width="35px"></div>
+                        <h4>Branding</h4>
+                        <p class="text-center mt-2 mb-4">A small river named Duden flows by their place and supplies.</p>
+                </div>
+                <div class="col-12 col-sm-10 col-md-5  col-lg-4 col-xl-2  border border-2 d-flex flex-column justify-content-evenly align-items-center" id="master" style=" box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);">
+                    <div class="we1 d-flex justify-content-center align-items-center mb-4 mt-4">
+                        <img src="img/computer.png" alt="" height="40px" width="35px"></div>
+                        <h4>Icon Design</h4>
+                        <p class="text-center mt-2 mb-4">A small river named Duden flows by their place and supplies.</p>
+                </div>
+                <div class="col-12 col-sm-10 col-md-5  col-lg-4 col-xl-2  border border-2 d-flex flex-column justify-content-evenly align-items-center" id="master" style=" box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);">
+                    <div class="we1 d-flex justify-content-center align-items-center mb-4 mt-4">
+                        <img src="img/curve.png" alt="" height="40px" width="35px"></div>
+                        <h4>Graphic Design</h4>
+                        <p class="text-center mt-2 mb-4">A small river named Duden flows by their place and supplies.</p>
+                </div>
+                <div class="col-12 col-sm-10 col-md-5  col-lg-4 col-xl-2  border border-2 d-flex flex-column justify-content-evenly align-items-center" id="master" style=" box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);">
+                    <div class="we1 d-flex justify-content-center align-items-center mb-4 mt-4">
+                        <img src="img/seo-search-symbol.png" alt="" height="40px" width="35px"></div>
+                        <h4>SEO</h4>
+                        <p class="text-center mt-2 mb-4">A small river named Duden flows by their place and supplies.</p>
+                </div>
+            </div>
+    </section>
+
+
+    <section id="haves" class="d-flex justify-content-center align-items-center" style="background-color: #b1b493;">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-10 col-sm-10 col-md-6 col-lg-6 col-xl-6">
+                    <h2>Have a project on your mind.</h2>
+                    <p class="mt-3 mb-3">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly.</p>
+                    <button class="mt-4 mb-3">Contact Me</button>
+                </div>
+                <div class="col-10 col-sm-10 col-md-6 col-lg-6 col-xl-4 h-100 d-flex justify-content-center align-items-center">
+                    <img src="img/author.png" height="250px" width="300px">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="d-flex justify-content-center align-items-center">
+        <div class="p1">
+            <div class="row text-center">
+                <div class="col mt-5 mb-3">
+                    <h6 style="color: #b1b493;">ACCOMPLISHMENTS</h6>
+                    <h1 class="mt-3">Our Projects</h1>
+                    <p class="mt-4 mb-5"> Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-evenly align-items-center">
+                <div id="pro1" class="col-11 col-sm-10 col-md-5 col-lg-5 col-xl-3 mt-3 mb-3 d-flex flex-column justify-content-center align-items-center" style="height: 300px; border-radius: 15px;">
+                    <div class="psa1">
+                        <h5 style="color: white;">Branding & illustration Design</h5>
+                        <h6 style="color: #b1b493;">WEB DESIGN</h6>
+                    </div>
+                </div>
+                <div id="pro2" class="col-11 col-sm-10 col-md-5 col-lg-5 col-xl-3 mt-3 mb-3 d-flex flex-column justify-content-center align-items-center" style="height: 300px; border-radius: 15px;">
+                    <div class="psa1">
+                        <h5 style="color: white;">Branding & illustration Design</h5>
+                        <h6 style="color: #b1b493;">WEB DESIGN</h6>
+                    </div>
+                </div>
+                <div id="pro3" class="col-11 col-sm-10 col-md-5 col-lg-5 col-xl-3 mt-3 mb-3 d-flex flex-column justify-content-center align-items-center" style="height: 300px; border-radius: 15px;">
+                    <div class="psa1">
+                        <h5 style="color: white;">Branding & illustration Design</h5>
+                        <h6 style="color: #b1b493;">WEB DESIGN</h6>
+                    </div>
+                </div>
+                <div id="pro4" class="col-11 col-sm-10 col-md-5 col-lg-5 col-xl-3 mt-3 mb-3 d-flex flex-column justify-content-center align-items-center" style="height: 300px; border-radius: 15px;">
+                    <div class="psa1">
+                        <h5 style="color: white;">Branding & illustration Design</h5>
+                        <h6 style="color: #b1b493;">WEB DESIGN</h6>
+                    </div>
+                </div>
+                <div id="pro5" class="col-11 col-sm-10 col-md-5 col-lg-5 col-xl-3 mt-3 mb-3 d-flex flex-column justify-content-center align-items-center" style="height: 300px; border-radius: 15px;">
+                    <div class="psa1">
+                        <h5 style="color: white;">Branding & illustration Design</h5>
+                        <h6 style="color: #b1b493;">WEB DESIGN</h6>
+                    </div>
+                </div>
+                <div id="pro6" class="col-11 col-sm-10 col-md-5 col-lg-5 col-xl-3 mt-3 mb-3 d-flex flex-column justify-content-center align-items-center" style="height: 300px; border-radius: 15px;">
+                    <div class="psa1">
+                        <h5 style="color: white;">Branding & illustration Design</h5>
+                        <h6 style="color: #b1b493;">WEB DESIGN</h6>
+                    </div>
+                </div>
+                <div id="pro7" class="col-11 col-sm-10 col-md-5 col-lg-5 col-xl-3 mt-3 mb-3 d-flex flex-column justify-content-center align-items-center" style="height: 300px; border-radius: 15px;">
+                    <div class="psa1">
+                        <h5 style="color: white;">Branding & illustration Design</h5>
+                        <h6 style="color: #b1b493;">WEB DESIGN</h6>
+                    </div>
+                </div>
+                <div id="pro8" class="col-11 col-sm-10 col-md-5 col-lg-5 col-xl-3 mt-3 mb-3 d-flex flex-column justify-content-center align-items-center" style="height: 300px; border-radius: 15px;">
+                    <div class="psa1">
+                        <h5 style="color: white;">Branding & illustration Design</h5>
+                        <h6 style="color: #b1b493;">WEB DESIGN</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- <section style="background-color: #b1b493;">
+
+        <div class="row mt-5">
+            <div class="col mt-5 mb-2 text-center">
+                <h4>Testimonies</h4>
+                <h1>What client says about?</h1>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+            </div>
+        </div> -->
+
+
+    <footer class="d-flex justify-content-center align-items-center">
+        <div class="container">
+            <div class="row d-flex justify-content-evenly align-items-center mt-5 mb-5">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 mt-4 mb-5" id="foo1">
+                    <h4 class="text-light">Lets talk about</h4>
+                    <p class="text-light mt-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <button>Learn More</button>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 mt-4 mb-5 d-flex flex-column justify-content-between" id="foo1">
+                    <h4 class="text-light">Links</h4>
+                    <a href="" class="text-decoration-none text-light mt-4">Home</a>
+                    <a href="" class="text-decoration-none text-light">About</a>
+                    <a href="" class="text-decoration-none text-light">Services</a>
+                    <a href="" class="text-decoration-none text-light">Projects</a>
+                    <a href="" class="text-decoration-none text-light">Contact</a>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 mt-4 mb-5 d-flex flex-column justify-content-between" id="foo1">
+                    <h4 class="text-light">Services</h4>
+                    <a href="" class="text-decoration-none text-light mt-4">Web Design</a>
+                    <a href="" class="text-decoration-none text-light">Web Development</a>
+                    <a href="" class="text-decoration-none text-light">Business Strategy</a>
+                    <a href="" class="text-decoration-none text-light">Data Analysis</a>
+                    <a href="" class="text-decoration-none text-light">Graphic Design</a>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 mt-4 mb-5" id="foo1">
+                    <h4 class="text-light">Have A Question ? </h4>
+                    <div class="row mt-5">
+                        <div class="col-2 col-sm-1 col-md-1 col-lg-1 col-xl-2"><i class="bi bi-geo fs-3 text-light"></i></div>
+                        <div class="col-10"><span class="text-light">203 Fake St. Mountain View, San Francisco, California, USA</span></div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-2 col-sm-1 col-md-1 col-lg-1 col-xl-2"><i class="bi bi-telephone fs-3 text-light"></i></div>
+                        <div class="col-10 mt-2"><span class="text-light">+2 392 3929 210</span></div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-2 col-sm-1 col-md-1 col-lg-1 col-xl-2"><i class="bi bi-envelope fs-3 text-light"></i></div>
+                        <div class="col-10 mt-2"><span class="text-light">info@yourdomain.com</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script>
+    $('.counter').counterUp({
+    delay: 10,
+    time: 1500,
+});
+</script>
+
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="slick-1.8.1/slick-1.8.1/slick/slick.js"></script>
+<script type="text/javascript">
+    $(document).on('ready', function() {
+      $(".regular").slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+      });
+    });
+</script>
+
+<script>
+    $(function() {
+    
+    $(".progress").each(function() {
+    
+      var value = $(this).attr('data-value');
+      var left = $(this).find('.progress-left .progress-bar');
+      var right = $(this).find('.progress-right .progress-bar');
+    
+      if (value > 0) {
+        if (value <= 50) {
+          right.css('transform', 'rotate(' + percentageToDegrees(value) + 'deg)')
+        } else {
+          right.css('transform', 'rotate(180deg)')
+          left.css('transform', 'rotate(' + percentageToDegrees(value - 50) + 'deg)')
+        }
+      }
+    
+    })
+    
+    function percentageToDegrees(percentage) {
+    
+      return percentage / 100 * 360
+    
+    }
+    
+    });
+    
+    </script>
+</html>
+<!-- <div style="height: 100px; background-color: rgba(255,0,0,0.1);"></div> -->
