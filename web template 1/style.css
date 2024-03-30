@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#a1{
+    height: 800px;
+    width: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(img/bg_2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.collapse ul li a{
+    color: white;
+}
+.collapse ul li a:hover{
+    color: #ce9c6b;
+}
+#nas{
+    width: 50%;
+}
+#info{
+    margin-top: 230px;
+}
+#info button{
+    height: 50px;
+    width: 200px;
+    background-color: #ce9c6b;
+    border: 1px solid #ce9c6b;
+    cursor: pointer;
+    color: white;
+    border-radius: 40px;
+}
+#a2{
+    background-color: rgb(27, 27, 27);
+}
+.wel{
+    width: 45%;
+}
+#a3{
+    background-color: black;
+}
+.services{
+    width: 62%;
+}
+.sw{
+    height: 50px;
+    width: 50px;
+    border: 1px dotted #ce9c6b;
+}
+#a4{
+    background: #1b1b1b;
+}
+.what{
+    width: 98%;
+}
+#w2a{
+    height: 250px;
+}
+
+#w1a{
+    height: 250px;
+    background-image: url(img/work-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#w3a{
+    height: 250px;
+    background-image: url(img/work-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#w4a{
+    height: 250px;
+    background-image: url(img/work-3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#w5a{
+    height: 250px;
+    background-image: url(img/work-4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#w6a{
+    height: 250px;
+    background-image: url(img/work-5.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#w7a{
+    height: 250px;
+    background-image: url(img/work-6.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.plan{
+    width: 60%;
+}
+#a5{
+    background: #1b1b1b;
+}
+#a6{
+    height: 500px;
+    width: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(img/bg_4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#a6 button{
+    height: 50px;
+    width: 180px;
+    background-color: #ce9c6b;
+    border: 1px solid #ce9c6b;
+    cursor: pointer;
+    border-radius: 40px;
+    color: white;
+    font-weight: 600;
+}
+.save{
+    width: 90%;
+}
+#a7{
+    background: #1b1b1b;
+}
+.our{
+    width: 70%;
+}
+.im1{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-image: url(img/person_1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.im2{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-image: url(img/person_2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.im3{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-image: url(img/person_3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.im4{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-image: url(img/person_4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#a8{
+    background-color: black;
+}
+.shop{
+    width: 65%;
+}
+.shop button{
+    height: 50px;
+    width: 140px;
+    background-color: #ce9c6b;
+    border: 1px solid #ce9c6b;
+    cursor: pointer;
+    border-radius: 40px;
+    color: white;
+    font-weight: 600;
+}
+#a9{
+    background-color: #1b1b1b;
+}
+.blogs{
+    width: 70%;
+}
+footer{
+    background-color: #1b1b1b;
+}
+.foo{
+    width: 70%;
+}
+.twi{
+    height: 50px;
+    width: 50px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.face{
+    height: 50px;
+    width: 50px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.inst{
+    height: 50px;
+    width: 50px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1200px)
+{
+    #nas{
+        width: 100%;
+    }
+    
+    .services{
+        width: 90%;
+    }
+    .wel{
+        width: 90%;
+    }
+    .what{
+        width: 90%;
+    }
+    .plan{
+        width: 90%;
+    }
+    .our{
+        width: 90%;
+    }
+    
+    .shop{
+        width: 90%;
+    }
+    .blogs{
+        width: 90%;
+    }
+    .foo{
+        width: 90%;
+    }
+}
