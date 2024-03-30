@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+header{
+    height: 50px;
+    width: 60%;
+    background-color: white;
+}
+.collapse ul li a{
+    color: black;
+    font-size: 14px;
+}
+#a2{
+    height: 800px;
+    width: 100%;
+}
+#ab1{
+    height: 800px;
+    width: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(images/slideshow-home-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#ab2{
+    height: 800px;
+    width: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(images/slider-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#btn1{
+    height: 50px;
+    width: 150px;
+    background-color: green;
+    border: 1px solid green;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+}
+#a3{
+    background-color: #1565c0 ;
+}
+.contact{
+    width: 63%;
+}
+#btn2{
+    height: 50px;
+    width: 90%;
+    background-color: #43a047;
+    border: 1px solid #43a047;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+}
+#btn3{
+    height: 50px;
+    width: 160px;
+    border: 1px solid #f20c36;
+    background-color: #f20c36;
+    cursor: pointer;
+    color: white;
+}
+.best{
+    width: 55%;
+}
+.doctors{
+    width: 57%;
+}
+#a6{
+    background-color: #f9f9f9;
+}
+.services{
+    width: 57%;
+}
+#se1{
+    height: 370px;
+}
+.latest{
+    width: 57%;
+}
+#l1{
+    height: 430px;
+}
+.departments{
+    width: 57%;
+}
+#depa1{
+    height: 400px;
+}
+footer{
+    background-image: url(images/footer_lodyas.png);
+}
+.foo{
+    width: 60%;
+}
+.all{
+    color: #999999;
+}
+.all button{
+    background-color: transparent;
+    border: 1px solid #999999;
+    color: #999999;
+}
+.all button:hover{
+    background-color: white;
+    border: 1px solid white;
+    color: black;
+}
+.navbar{
+    width: 57%;
+}
+.services .card{
+    overflow: hidden;
+}
+.services .card:hover img{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.latest .card{
+    overflow: hidden;
+}
+.latest .card:hover img{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.departments .card{
+    overflow: hidden;
+}
+.departments .card:hover img{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.doctors .card{
+    overflow: hidden;
+}
+.doctors .card img:hover{
+    transform: scale(0.9);
+    transition: 1s;
+}
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1200px){
+    header{
+        width: 90%;
+    }
+    .contact{
+        width: 90%;
+        text-align: center;
+    }
+    .best{
+        width: 90%;
+    }
+    .doctors{
+        width: 90%;
+    }
+    .services{
+        width: 90%;
+    }
+    .latest{
+        width: 90%;
+    }
+    .departments{
+        width: 90%;
+    }
+    .foo{
+        width: 90%;
+    }
+    .navbar{
+        width: 90%;
+    }
+}
+@media(max-width:768px){
+    #l1{
+        height: 450px;
+    }
+}
+@media(max-width:576px){
+    #se1{
+        height: 350px;
+    }
+}
+@media(max-width:480px){
+    #se1{
+        height: 400px;
+    }
+    #depa1{
+        height: 480px;
+    }
+}
