@@ -1,0 +1,414 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.head{
+    width: 65%;
+}
+.navbar ul li a{
+    color: black;
+    font-weight: 600;
+    position: relative;
+}
+.navbar ul li a:hover{
+    color: #0a85d1;
+    transition: 1s;
+}
+.navbar ul li a::before{
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    transition: 1s;
+}
+.navbar ul li a:hover::before{
+    width: 85%;
+    border: 1px solid #0a85d1;
+}
+.fa-magnifying-glass{
+    cursor: pointer;
+}
+.fa-magnifying-glass:hover{
+    color: #0a85d1;
+    transition: 1s;
+}
+.fa-user{
+    cursor: pointer;
+}
+.fa-user:hover{
+    color: #0a85d1;
+    transition: 1s;
+}
+.fa-cart-shopping{
+    cursor: pointer;
+}
+
+.fa-cart-shopping:hover{
+    color: #0a85d1;
+    transition: 1s;
+}
+.se{
+    width: 13%;
+}
+#a1 .bg1{
+    width: 80%;
+    background-color: #ebebeb;
+    border-radius: 40px;
+}
+#btn1{
+    height: 45px;
+    width: 130px;
+    background-color: #0a85d1;
+    border: 1px solid #0a85d1;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+}
+.a3{
+    width: 60%;
+}
+#s1{
+    height: 370px;
+    background-image: url(images/banner-570x360-2_1200x.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50px;
+}
+#s2{
+    height: 370px;
+    background-image: url(images/Untitled_design_8_1200x.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50px;
+}
+#btn2{
+    height: 50px;
+    width: 130px;
+    background-color: transparent;
+    border: 1px solid black;
+    cursor: pointer;
+    color: black;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+#btn2::before{
+    content: "";
+    height: 100%;
+    width: 0;
+    background-color: #0a85d1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 1s;
+    z-index: -1;
+}
+#btn2:hover::before{
+    width: 100%;
+    border-radius: 10px;
+}
+#btn2:hover{
+    color: white;
+    transition: 1s;
+    border: 1px solid #0a85d1;
+}
+.best{
+    width: 65%;
+}
+#card1{
+    position: relative;
+    height: 410px;
+}
+#btn3{
+    background-color: white;
+    border: transparent;
+    width: 45px;
+    box-shadow: 0 16px 32px 0 rgba(7, 28, 31, 0.1);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 20px;
+}
+#shirt2{
+    display: none;
+}
+.card:hover #shirt2{
+    display: block;
+}
+.card:hover #shirt1{
+    display: none;
+}
+.yellow{
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background-color: gold;
+    cursor: pointer;
+}
+.grey{
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background-color: gray;
+    cursor: pointer;
+}
+.mejanta{
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background-color: magenta;
+    cursor: pointer;
+}
+#colors{
+    width: 40%;
+}
+.brown{
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background: maroon;
+    cursor: pointer;
+}
+.red{
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background: red;
+    cursor: pointer;
+}
+.green{
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background:green;
+    cursor: pointer;
+}
+.blue{
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background: blue;
+    cursor: pointer;
+}
+#btn4{
+    height: 40px;
+    width: 130px;
+    background-color: #0a85d1;
+    border: 1px solid #0a85d1;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+}
+#a5{
+    background-color: #ebebeb;
+}
+.blog{
+    width: 60%;
+}
+footer{
+    background-color: #ebebeb;
+}
+.foo{
+    width: 65%;
+}
+.socails{
+    width: 45%;
+}
+.fa-facebook-f{
+    cursor: pointer;
+}
+.fa-facebook-f:hover{
+    color: #0a85d1;
+}
+.fa-twitter{
+    cursor: pointer;
+}
+.fa-twitter:hover{
+    color: #0a85d1;
+}
+.fa-youtube{
+    cursor: pointer;
+}
+.fa-youtube:hover{
+    color: #0a85d1;
+}
+.fa-instagram{
+    cursor: pointer;
+}
+.fa-instagram:hover{
+    color: #0a85d1;
+}
+.fa-tiktok{
+    cursor: pointer;
+}
+.fa-tiktok:hover{
+    color: #0a85d1;
+}
+.all a{
+    color: #303030;
+}
+#foo1{
+    height: 300px;
+}
+#foo2{
+    height: 300px;
+}
+.card1{
+    position: relative;
+}
+.extrahover{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    display: none;
+    position: absolute;
+    bottom: 130px;
+    width: 80%;
+}
+.extrahover1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    display: none;
+    position: absolute;
+    bottom: 130px;
+    width: 50%;
+}
+#card1:hover .extrahover{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#card1:hover .extrahover1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.exh1{
+    height: 45px;
+    width: 45px;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.exh1:hover{
+    background-color: #0a85d1;
+    color: white;
+}
+.exh2{
+    height: 45px;
+    width: 45px;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.exh2:hover{
+    background-color: #0a85d1;
+    color: white;
+}
+.exh3{
+    height: 45px;
+    width: 45px;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.exh3:hover{
+    background-color: #0a85d1;
+    color: white;
+}
+.exh4{
+    height: 45px;
+    width: 45px;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.exh4:hover{
+    background-color: #0a85d1;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1200px)
+{
+    .best{
+        width: 90%;
+    }
+    .head{
+        width: 90%;
+    }
+    .se{
+        width: 50%;
+    }
+    #foo1{
+        height: 320px;
+    }
+    #foo2{
+        height: 320px;
+    }
+    .foo{
+        width: 90%;
+    }
+    #slider{
+        display: none;
+    }
+    .blog{
+        width: 90%; 
+    }   
+}
+@media(max-width:992px)
+{
+    #foo1{
+        height: 370px;
+    }
+    #foo2{
+        height: 250px;
+    }
+}
+@media(max-width:768px)
+{
+    #foo1{
+        height: 370px;
+    }
+    #foo2{
+        height: 250px;
+    }
+}
+@media(max-width:576px)
+{
+    #foo1{
+        height: 370px;
+    }
+    #foo2{
+        height: 250px;
+    }
+}
+@media(max-width:480px)
+{
+    #foo1{
+        height: 300px;
+    }
+    #foo2{
+        height: 300px;
+    }
+}
